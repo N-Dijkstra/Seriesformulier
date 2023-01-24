@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Series</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styling.css">
+    </head>
+    <body>
+        <form>
+            <h1>Invulformulier series</h1>
+            <div>
+                <label for="titel"><b>Titel:</b></label><br/>
+                <input id="titel" type="text" name="txtTitel"/>
+            </div>
+            <br/>
+            <div>
+                <label for="genre"><b>Genre:</b></label><br/>
+                <select id="genre" name="genres">
+                    <option value="drama">drama</option>
+                    <option value="horror">horror</option>
+                    <option value="thriller">thriller</option>
+                    <option value="romatiek">romantiek</option>
+                    <option value="comedy">comedy</option>
+                    <option value="actie">actie</option>
+                    <option value="sci-fi & fantasy">sci-fi & fantasy</option>
+                </select>
+            </div>
+            <br/>
+            <div>
+                <label for="aflevering"><b>Afleveringen totaal:</b></label><br/>
+                <input id="aflevering" type="number" name="nmbAfleveringen" min="1" max="730"/>
+            </div>
+            <br/>
+            <div>
+                <label for="seizoenen"><b>Aantal seizoenen:</b></label><br/>
+                <div>
+                    <input type="radio" id="seizoenOptie1" name="seizoenen" value="minder5"/>
+                    <label for="seizoenOptie1">minder dan 5</label>
+
+                    <input type="radio" id="seizoenOptie2" name="seizoenen" value="5tot10"/>
+                    <label for="seizoenOptie2">5-10</label>
+                    
+                    <input type="radio" id="seizoenOptie3" name="seizoenen" value="meer10"/>
+                    <label for="seizoenOptie3">meer dan 10</label>
+                </div>
+            </div>
+            <br/>
+            <div>
+                <label for="dtmStart"><b>Wanneer gestart:</b></label><br/>
+                <input id="dtmStart" type="month" name="mntStart" min="1928-09" max="2022-10"/>
+            </div>
+            <br/>
+            <div id="platform">
+            <label for="platform"><b>Streamingsplatform(en):</b></label><br/>
+                <div>
+                    <input type="checkbox" id="netflix" name="netflixbox" />
+                    <label for="netflix">Netflix</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="primevid" name="primebox"/>
+                    <label for="primevid">Prime Video</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="disneyplus" name="disneybox"/>
+                    <label for="disneyplus">Disney Plus</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="hbomax" name="hbobox"/>
+                    <label for="hbomax">HBO Max</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="videoland" name="videoland"/>
+                    <label for="videoland">Videoland</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="appletv" name="applebox"/>
+                    <label for="appletv">Apple TV</label>
+                </div>
+            </div>
+            <br/>
+            <label for="score"><b>Geef een score:</b></label><br/>
+            <div class="iconsBox">
+                <input type="radio" id="score1" name="score" value="positief"/>
+                <img src="img/happysmiley.svg" alt="smiley"/>
+
+                <input type="radio" id="score2" name="score" value="neutraal"/>
+                <img src="img/neutralsmiley.svg" alt="smileyneutral"/>
+
+                <input type="radio" id="score3" name="score" value="negatief"/>
+                <img src="img/sadsmiley.svg" alt="smileysad"/>
+            </div>
+            <br/>
+            <div class="verstuurbox">
+            <button type="submit" name="btnVerstuur" class="verstuurknop">
+                <span class="material-icons"> send </span>
+            </button>
+            </div>
+        </form>
+    </body>
+</html>
